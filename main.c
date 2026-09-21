@@ -1,16 +1,20 @@
+
 #include <stdio.h>
 
 int main(void)
 {
-    char c; 
-    int next;
+    int a, b;
+    float result;
 
-    printf("enter a character :");
-    scanf("%c", &c);
+    printf("Enter an integer: ");
+    scanf("%d", &a);
 
-    next = c +1;
+    printf("Enter an integer: ");
+    scanf("%d", &b);
 
-    printf("The next character of %c (%d) is %c (%d)\n", c, c, next, next );
+    result = (float)a / b;
+
+    printf("The result of division is %f\n", result);
 
     return 0;
 }
